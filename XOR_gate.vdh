@@ -1,0 +1,20 @@
+-- Code your design here
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.std_logic_unsigned.all;
+
+entity XOR_gate is
+port(
+		A_i: in  std_logic;
+        B_i: in  std_logic;
+        S_o: out std_logic
+    );
+end XOR_gate;
+
+architecture XOR_gate of XOR_gate is
+begin 
+    process(A_i, B_I)
+    begin
+        S_O <= A_i xor B_i;
+    end process;
+end XOR_gate;
